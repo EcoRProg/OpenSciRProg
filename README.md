@@ -1,6 +1,6 @@
-# Introduction to Open Science and R Programing in Ecology
+# Introduction to Open Science and R Programming in Ecology
 
-## Data set
+## Data set 
 
 Ecological Archives E094-244-D1
 
