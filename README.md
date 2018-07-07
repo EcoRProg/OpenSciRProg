@@ -10,4 +10,6 @@
 
 	<http://dx.doi.org/10.6084/m9.figshare.c.3306321>
 
+* Excel file with the data from:
 
+	Schloss, Irene R (2010): Chlorophyll a concentrations measured on water samples of two stations at Potter Cove, King George Island, Western Antarctic Peninsula (1991-2010). PANGAEA, <https://doi.org/10.1594/PANGAEA.745597>
