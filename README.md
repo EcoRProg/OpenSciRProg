@@ -1,5 +1,7 @@
 # Introduction to Open Science and R Programming in Ecology
 
+This is a repo to explain collaborative workflow in github 
+
 ## Dataset Examples 
 
 
