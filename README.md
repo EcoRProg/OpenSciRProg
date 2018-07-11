@@ -11,3 +11,9 @@ This is a repo to explain collaborative workflow in github
 * Excel file with the data from:
 
 	Schloss, Irene R (2010): Chlorophyll a concentrations measured on water samples of two stations at Potter Cove, King George Island, Western Antarctic Peninsula (1991-2010). PANGAEA, <https://doi.org/10.1594/PANGAEA.745597>
+
+* Network data from:
+
+	Marina TI, Saravia LA, Cordone G, Salinas V, Doyle SR, et al. (2018) Architecture of marine food webs: To be or not be a ‘small-world’. PLOS ONE 13(5): e0198217. https://doi.org/10.1371/journal.pone.0198217. Figshare <https://doi.org/10.6084/m9.figshare.5902030.v5> Github <https://github.com/lsaravia/MarineFoodWebsSmallWorld>
+
+	
