@@ -23,16 +23,12 @@
 
   * Ecology can make critical contributions to large-scale environmental questions and close many knowledge gaps that are likely to persist in big-science initiatives, but only if ecologists are willing to participate in the big-data landscape
   
+>>>>>>> a334906c6827d6efde6d234c14c5e86b3c4dd63a
 
 #Una mente abierta en datos abiertos
 
 Como dice Carly Strasser :
 
-> "Ciencia abierta, compartir datos, compartir software es el futuro de la ciencia"
-
-> "Va a ser más difícil involucrarse en la ciencia sin ser abierto"
-
-# A Review of Open Science and Computational Ecology
 
 ## Introduction
 
@@ -62,6 +58,20 @@ GEWIN, Virginia. Data sharing: An open mind on open data. Nature, 2016, vol. 529
 An old joke says that doing the research is the first 90% of any project; _writing up is the other 90%_
 
 
+##Results
+
+###Responses to Data Requests
+
+Total 49 corresponding authors:
+  *21 had shared some data with Wicherts et al. 
+  *13 corresponding authors failed to respond to the request or any of the two reminders.
+  *3 corresponding authors refused to share data either because the data were lost or because they lacked      time to retrieve the data and write a codebook.
+  * 12 corresponding authors promised to share data at a later date, but have not done so in the
+    past six years (we did not follow up on it). 
+    
+These authors commonly indicated that the data were not readily available or that they first needed to       write a codebook
+=======
+
 ##Otro ejemplo
 
 ### Autores
@@ -70,7 +80,6 @@ Chen H, Gurmesa GA, Zhang W, Zhu X, Zheng M, Mao Q, Zhang T, Mo J (2016)
 
 ### Resumen
 La hipótesis de saturación de nitrógeno (N) sugiere que cuando un ecosistema alcanza la saturación de N, la entrada continua de N provocará una mayor lixiviación de N, emisión de óxido nitroso (N2O) y tasas de mineralización y nitrificación de N. También sugiere que un elemento diferente se convertirá en el principal factor limitante cuando se haya alcanzado la saturación de N. Aunque esta hipótesis ha sido probada en bosques templados, aún no se ha abordado si se pueden aplicar directamente a los bosques tropicales saturados de nitrógeno. Para probar esta hipótesis, el N inorgánico del suelo, la mineralización del N del suelo y la tasa de nitrificación, la tasa de emisión de N2O del suelo y la tasa de lixiviación del nitrato (imagen en línea) se midieron en un bosque tropical saturado de N en el sur de China...
-.
 
 Equivalente a mandar todo a la licuadora. No?
 
