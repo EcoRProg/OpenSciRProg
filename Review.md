@@ -1,5 +1,6 @@
 # A Review of Open Science and Computational Ecology  
 
+<<<<<<< HEAD
 ## An open mind on open data
 
 Scientists who are cautious about open science can start small by sharing data for a project that they have already completed. Specialists in the field offer this advice:
@@ -19,3 +20,6 @@ relevant metadata as you go. It is very hard to reconstruct important details af
 to share.
 
 GEWIN, Virginia. Data sharing: An open mind on open data. Nature, 2016, vol. 529, no 7584, p. 117-119.
+=======
+## Introduction
+>>>>>>> 091253d6e1362c94b590176301b49c5fd0100559
