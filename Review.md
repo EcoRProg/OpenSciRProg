@@ -5,8 +5,38 @@
 The widespread reluctance to share published research data is often hypothesized to be due to the authors' fear that reanalysis may expose errors in their work or may produce conclusions that contradict their own. However, these hypotheses have not previously been studied systematically.
 =======
 
-<<<<<<< HEAD
-## An open mind on open data
+#Big data and the future of ecology
+
+##Massive volumes of data
+
+  1.Ecologistslack a culture of data sharing
+  
+  2.Treat data as an enduring product of research
+  
+  3.Basicaly to address large-scale questions
+  
+##Action items for individual ecologists
+
+  1.Organize, document, and preserve data for posterity
+  
+  2.Share data
+  
+  3.Collaborate with networks of colleagues to bring together heterogeneous datasets to address larger scale questions 4.Address data management issues with students and peers
+  
+  
+##Conclusions
+
+  * Ecology can make critical contributions to large-scale environmental questions and close many knowledge gaps that are likely to persist in big-science initiatives, but only if ecologists are willing to participate in the big-data landscape
+  
+
+#Una mente abierta en datos abiertos
+
+Como dice Carly Strasser :
+
+
+## Introduction
+
+### An open mind on open data
 
 Scientists who are cautious about open science can start small by sharing data for a project that they have already completed. Specialists in the field offer this advice:
 
@@ -25,6 +55,37 @@ relevant metadata as you go. It is very hard to reconstruct important details af
 to share.
 
 GEWIN, Virginia. Data sharing: An open mind on open data. Nature, 2016, vol. 529, no 7584, p. 117-119.
+
+
+### Una frase aleatoria de Good enough practices in scientific computing
+
+An old joke says that doing the research is the first 90% of any project; _writing up is the other 90%_
+
+
+##Results
+
+###Responses to Data Requests
+
+Total 49 corresponding authors:
+  *21 had shared some data with Wicherts et al. 
+  *13 corresponding authors failed to respond to the request or any of the two reminders.
+  *3 corresponding authors refused to share data either because the data were lost or because they lacked      time to retrieve the data and write a codebook.
+  * 12 corresponding authors promised to share data at a later date, but have not done so in the
+    past six years (we did not follow up on it). 
+    
+These authors commonly indicated that the data were not readily available or that they first needed to       write a codebook
 =======
-## Introduction
->>>>>>> 091253d6e1362c94b590176301b49c5fd0100559
+
+##Otro ejemplo
+
+### Autores
+Chen H, Gurmesa GA, Zhang W, Zhu X, Zheng M, Mao Q, Zhang T, Mo J (2016)
+
+
+### Resumen
+La hipótesis de saturación de nitrógeno (N) sugiere que cuando un ecosistema alcanza la saturación de N, la entrada continua de N provocará una mayor lixiviación de N, emisión de óxido nitroso (N2O) y tasas de mineralización y nitrificación de N. También sugiere que un elemento diferente se convertirá en el principal factor limitante cuando se haya alcanzado la saturación de N. Aunque esta hipótesis ha sido probada en bosques templados, aún no se ha abordado si se pueden aplicar directamente a los bosques tropicales saturados de nitrógeno. Para probar esta hipótesis, el N inorgánico del suelo, la mineralización del N del suelo y la tasa de nitrificación, la tasa de emisión de N2O del suelo y la tasa de lixiviación del nitrato (imagen en línea) se midieron en un bosque tropical saturado de N en el sur de China...
+
+Equivalente a mandar todo a la licuadora. No?
+
+
+
