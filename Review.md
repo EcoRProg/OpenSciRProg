@@ -13,7 +13,7 @@
 **Conclusions:** Our findings on the basis of psychological papers suggest that statistical results are particularly hard to verify when reanalysis is more likely to lead to contrasting conclusions. This highlights the importance of establishing mandatory data archiving policies.
 
 Esto es mas nuevo aún. ..... 
-hhh
+No me alza PUSH 
 =======
 <<<<<<< HEAD
 # A Review of Open Science and Computational Ecology  
