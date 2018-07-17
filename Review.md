@@ -23,7 +23,6 @@
 
   * Ecology can make critical contributions to large-scale environmental questions and close many knowledge gaps that are likely to persist in big-science initiatives, but only if ecologists are willing to participate in the big-data landscape
   
->>>>>>> a334906c6827d6efde6d234c14c5e86b3c4dd63a
 
 #Una mente abierta en datos abiertos
 
