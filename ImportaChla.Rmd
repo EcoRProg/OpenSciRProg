@@ -12,5 +12,18 @@ knitr::opts_chunk$set(echo = TRUE)
 ## Importa Chla
 
 ```{r importaChla}
-
+chla<-read.delim("Data/Clorofila.txt", stringsAsFactors = FALSE)
+chla
+str(chla)# da la estructura de los datos
+colnames(chla)
+names (chla)
+head (chla)
+nrow(chla)
+chla[1:10,3]
+install.packages ("lubridate")
+require(lubridate)
+chla<-fixChlorophyllData(chla)#y que genera una columna nueva!
+str(chla)
+chla
+  
 ```
