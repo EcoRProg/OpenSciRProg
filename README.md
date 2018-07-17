@@ -16,4 +16,3 @@ This is a repo to explain collaborative workflow in github
 
 	Marina TI, Saravia LA, Cordone G, Salinas V, Doyle SR, et al. (2018) Architecture of marine food webs: To be or not be a ‘small-world’. PLOS ONE 13(5): e0198217. https://doi.org/10.1371/journal.pone.0198217. Figshare <https://doi.org/10.6084/m9.figshare.5902030.v5> Github <https://github.com/lsaravia/MarineFoodWebsSmallWorld>
 
-	

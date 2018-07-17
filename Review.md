@@ -28,7 +28,11 @@ The widespread reluctance to share published research data is often hypothesized
 ##Conclusions
 
   * Ecology can make critical contributions to large-scale environmental questions and close many knowledge gaps that are likely to persist in big-science initiatives, but only if ecologists are willing to participate in the big-data landscape
+<<<<<<< HEAD
+
+=======
   
+>>>>>>> 936a628fe9fb745db8a8113cadabba515ab58b43
 
 #Una mente abierta en datos abiertos
 
@@ -68,14 +72,18 @@ An old joke says that doing the research is the first 90% of any project; _writi
 ###Responses to Data Requests
 
 Total 49 corresponding authors:
-  *21 had shared some data with Wicherts et al. 
-  *13 corresponding authors failed to respond to the request or any of the two reminders.
-  *3 corresponding authors refused to share data either because the data were lost or because they lacked      time to retrieve the data and write a codebook.
-  * 12 corresponding authors promised to share data at a later date, but have not done so in the
+   
+    *21 had shared some data with Wicherts et al.
+
+    *13 corresponding authors failed to respond to the request or any of the two reminders.
+   
+    *3 corresponding authors refused to share data either because the data were lost or because they lacked time to retrieve the data and write a codebook.
+   
+    * 12 corresponding authors promised to share data at a later date, but have not done so in the
     past six years (we did not follow up on it). 
     
 These authors commonly indicated that the data were not readily available or that they first needed to       write a codebook
-=======
+
 
 ##Otro ejemplo
 
