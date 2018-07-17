@@ -15,4 +15,14 @@ knitr::opts_chunk$set(echo = TRUE)
   chla <- read.delim('Data/Clorofila.txt', stringsAsFactors = FALSE)
   str(chla)
   chla
+  rownames(chla)
+  colnames(chla)
+  ncol(chla)
+  nrow(chla)
+
+  
+
+  
+  
+  
 ```
