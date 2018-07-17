@@ -1,0 +1,16 @@
+---
+title: "Importar Datos Chla"
+author: "L.A.S."
+date: "July 17, 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Importa Chla
+
+```{r importaChla}
+  chla <- read.csv('Clorofila.txt')
+```
