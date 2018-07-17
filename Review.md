@@ -1,5 +1,15 @@
-<<<<<<< HEAD
+
 # A Review of Open Science and Computational Ecology  
+
+
+#Una mente abierta en datos abiertos
+
+Como dice Carly Strasser :
+
+
+
+
+# A Review of Open Science and Computational Ecology
 
 
 ## Introduction
@@ -29,6 +39,7 @@ GEWIN, Virginia. Data sharing: An open mind on open data. Nature, 2016, vol. 529
 
 An old joke says that doing the research is the first 90% of any project; _writing up is the other 90%_
 
+HEAD
 ##Results
 
 ###Responses to Data Requests
@@ -42,4 +53,4 @@ Total 49 corresponding authors:
     
 These authors commonly indicated that the data were not readily available or that they first needed to       write a codebook
 
->>>>>>> a931c03771f042cc48e013ab1a032c33bdae59af
+
