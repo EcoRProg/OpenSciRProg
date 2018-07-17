@@ -23,7 +23,7 @@ to share.
 GEWIN, Virginia. Data sharing: An open mind on open data. Nature, 2016, vol. 529, no 7584, p. 117-119.
 
 
-###Una frase aleatoria de Good enough practices in scientific computing
+### Una frase aleatoria de Good enough practices in scientific computing
 
 An old joke says that doing the research is the first 90% of any project; _writing up is the other 90%_
 
