@@ -14,15 +14,15 @@
 
 Esto es mas nuevo aún. ..... 
 No me alza PUSH 
+
+adsdadsasd
 =======
-<<<<<<< HEAD
-# A Review of Open Science and Computational Ecology  
+ # A Review of Open Science and Computational Ecology  
 
 #Una mente abierta en datos abiertos
 =======
 #Big data and the future of ecology
->>>>>>> 19d15a4f6db8566f154b4ff4fa7084926514f9f2
-
+ 
 ##Massive volumes of data
 
   1.Ecologistslack a culture of data sharing
@@ -90,9 +90,7 @@ Total 49 corresponding authors:
     past six years (we did not follow up on it). 
     
 These authors commonly indicated that the data were not readily available or that they first needed to       write a codebook
-=======
 
-##Otro ejemplo
 
 ### Autores
 Chen H, Gurmesa GA, Zhang W, Zhu X, Zheng M, Mao Q, Zhang T, Mo J (2016)
@@ -105,10 +103,3 @@ Equivalente a mandar todo a la licuadora. No?
 
 
 
-<<<<<<< HEAD
-=======
->>>>>>> b29770d8e4c6c0338b069f3c2dd1cc2028e7d54e
->>>>>>> 5a7ac8a18712d33a2081ea609032d0dd091a9952
->>>>>>> 2a3b136696eeb858ab9fdd62facb1762b22c5ccb
-=======
->>>>>>> 19d15a4f6db8566f154b4ff4fa7084926514f9f2
