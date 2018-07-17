@@ -1,3 +1,15 @@
+<<<<<<< HEAD
+# A Review of Open Science and Computational Ecology  
+
+#Una mente abierta en datos abiertos
+
+Como dice Carly Strasser :
+
+> "Ciencia abierta, compartir datos, compartir software es el futuro de la ciencia"
+
+> "Va a ser más difícil involucrarse en la ciencia sin ser abierto"
+
+=======
 # A Review of Open Science and Computational Ecology
 
 ## Introduction
@@ -27,6 +39,7 @@ GEWIN, Virginia. Data sharing: An open mind on open data. Nature, 2016, vol. 529
 
 An old joke says that doing the research is the first 90% of any project; _writing up is the other 90%_
 
+<<<<<<< HEAD
 
 ##Otro ejemplo
 
@@ -39,3 +52,6 @@ La hipótesis de saturación de nitrógeno (N) sugiere que cuando un ecosistema 
 .
 
 
+=======
+>>>>>>> b29770d8e4c6c0338b069f3c2dd1cc2028e7d54e
+>>>>>>> 5a7ac8a18712d33a2081ea609032d0dd091a9952
