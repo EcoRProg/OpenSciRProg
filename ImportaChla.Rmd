@@ -7,10 +7,16 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+
+chla <- read.delim("Data/Clorofila.txt", stringsAsFactors = FALSE)
+require(lubridate)
+chla <- fixChlorophyllData(chla)
+
+
 ```
 
 ## Importa Chla
 
-```{r importaChla}
+
 
 ```
