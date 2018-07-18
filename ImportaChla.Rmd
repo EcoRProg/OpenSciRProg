@@ -12,31 +12,30 @@ knitr::opts_chunk$set(echo = TRUE)
 ## Importa Chla
 
 ```{r importaChla}
-  chla <- read.delim('Data/Clorofila.txt', stringsAsFactors = FALSE)
-#  str(chla)
-#  chla
-#  rownames(chla)
-#  colnames(chla)
-#  ncol(chla)
-#  nrow(chla)
-#  acu <- chla[1:3,]
-
+source("R/functions.r")
 require(lubridate)
-val_01 <- 1
+require(ggplot2)
+require(tidyr)
 
-for(i in 1:nrow(chla)){
-  #if (isna(chla[i,1])) 
-  if (isna(chla$Year[i]))
-    chla[1,i] <- val_01
-  else
-    val_01 <- chla[1,i]
-}
-  
+chla <- read.delim("Data/Clorofila.txt", stringsAsFactors = FALSE)
+
+fixedChla <- fixChlorophyllData(chla)
 
 
-  
+range(fixedChla$IntegE1, na.rn=TRUE)
 
-  
-  
-  
+ggplot(fixedChla, aes(Date, IntegE1)) + geom_point()
+
+ggplot(fixedChla, aes(Date, IntegE1)) + geom_point(color="blue") + scale_y_log10()
+
+ggplot(fixedChla, aes(Date, IntegE2)) + geom_point(color="red") + scale_y_log10()
+
+ggplot(fixedChla, aes(Date, IntegE2)) + geom_point(color="red") + scale_y_log10() + theme_bw()
+
+ChlaRerranged <- gather(fixedChla, IntegE1, IntegE2, key="Station", value="ChlaInteg")
+
+ggplot(ChlaRerranged, aes(Date, ChlaInteg, color=Station)) + geom_point() + scale_y_log10() + theme_bw()
+
+#str(fixedChla)
+
 ```
