@@ -15,6 +15,7 @@ fixChlorophyllData <- function(chla)
     fechaTmp1 <- ymd(paste(chla$Year[i],chla$Month[i],1))
     fechaTmp2 <- dmy(chla$Month[i])
     fechaTmp3 <- mdy(chla$Month[i])
+    fechaTmp4 <- myd(chla$Month[i])
     
     if(is.na(fechaTmp1)==FALSE)
     {
@@ -29,6 +30,7 @@ fixChlorophyllData <- function(chla)
                       {
                       chla$Date[i]=ymd(paste(chla$Year[i],8,1))
                       }
+                      else {chla$Date[i] <- fechaTmp4}
     
     }  
     

@@ -29,6 +29,21 @@ chla <- fixChlorophyllData(chla)
 
 require(ggplot2)
 
-ggplot(chla,aes(Date,IntegE1))+geom_point(color="red")
+require(tidyr)
+
+range(chla$IntegE1,na.rm=TRUE)
+
+auxchla <- gather(chla,IntegE1,IntegE2,key="Station",value="ChlaInteg")
+
+ggplot(auxchla,aes(Date,ChlaInteg,color=Station))+geom_point()+theme_classic()+scale_y_log10()
+
+ggplot(auxchla,aes(Date,ChlaInteg,color=Station))+geom_point()+theme_classic()+scale_y_log10()+geom_line()+facet_wrap( ~Station)+scale_color_brewer(palette="Dark2")+stat_smooth()
+
+
+#ggplot(chla,aes(Date,IntegE1))+geom_point(color="blue")
+
+
+#install.packages("tidyr")
+#require(tidyr)
 
 ```
