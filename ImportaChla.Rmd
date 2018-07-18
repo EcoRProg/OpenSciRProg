@@ -18,9 +18,14 @@ chla <- read.delim("Data/Clorofila.txt", stringsAsFactors = FALSE)
 
 require(lubridate)
 
-chla <- fixChlorophylData(chla)
-
+fixedChla <- fixChlorophylData(chla)
 
 require(ggplot2)
+
+ggplot(fixedChla, aes(Date, IntegE1)) + geom_point(color="hotpink2") + scale_y_log10() + theme_minimal()
+
+ggplot(fixedChla, aes(Date, IntegE2)) + geom_point(color="mediumpurple3") + scale_y_log10() + theme_minimal()
+
+range(fixedChla$IntegE1, na.rm = TRUE)
 
 ```
