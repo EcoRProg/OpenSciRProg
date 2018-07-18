@@ -29,6 +29,6 @@ chla <- fixChlorophyllData(chla)
 
 require(ggplot2)
 
-ggplot(chla,aes(Date,IntegE1))+geom_point()
+ggplot(chla,aes(Date,IntegE1))+geom_point(color="red")
 
 ```
