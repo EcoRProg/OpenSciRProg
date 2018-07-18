@@ -12,5 +12,29 @@ knitr::opts_chunk$set(echo = TRUE)
 ## Importa Chla
 
 ```{r importaChla}
+# chla <- read.csv("Data/Clorofila.txt")
+
+chla <- read.delim("Data/Clorofila.txt", stringsAsFactors = FALSE)
+str(chla)
+rownames(chla)
+colnames(chla)
+head(chla)
+nrow(chla)
+ncol(chla)
+
+chla[1,1]
+chla[1,]
+chla[1:10,]
+chla[1:10,3]
+
+install.packages("lubridate")
+require(lubridate)
+
+# Para arreglar el año
+
+chla <- fixChlorophyllData(chla)
+
+
+str(chla)
 
 ```
