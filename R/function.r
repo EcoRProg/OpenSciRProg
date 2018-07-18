@@ -16,12 +16,22 @@ for (i in 1:nrow(chla)) {
   
   if(is.na(fechaTmp)){
     
-    fechaTmp <- dmy(chla$Month[i])
+    if(chla$Month[i]=="Mar") {
     
-  }  
-  chla$Date[i] <- fechaTmp
+      fechaTmp <- ymd(paste(chla$Year[i], 3, 1))
+
+      }else if(chla$Month[i]=="Ago") {
+    
+    fechaTmp <- ymd(paste(hla$Year[i], 8, 1))
+      }  else {
   
+    fechaTmp <- dmy(chla$Month[i])
+   }
+  } 
+  
+  chla$Date[i] <- fechaTmp
   }
+  
  
   chla$IntegE1 <- abs(chla$IntegE1)
   chla$IntegE2 <- abs(as.numeric(chla$IntegE2))
@@ -29,4 +39,4 @@ for (i in 1:nrow(chla)) {
   
   return(chla)
   
-}
+  }

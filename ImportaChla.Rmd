@@ -13,4 +13,19 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ```{r importaChla}
 
+chla <- read.delim("Data/Clorofila.txt", stringsAsFactors = FALSE)
+chla #se ve el objeto
+str(chla) #da la estructira de los datos
+colnames(chla) #da el nombre de las columnas
+rownames(chla) #da el nombre de las filas
+nrow(chla) #da el numero de filas
+
+install.packages("lubridate")
+require(lubridate)
+source("R/function.r")
+chla <- read.delim("Data/Clorofila.txt", stringsAsFactors = FALSE)
+ chla <- fixChlorophyllData(chla)
+chla
+str(chla)
+
 ```
