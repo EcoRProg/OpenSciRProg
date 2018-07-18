@@ -12,6 +12,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ## Importa Chla
 
 ```{r importaChla}
+source()
 
 chla <- read.delim("Data/Clorofila.txt", stringsAsFactors = FALSE)
 
