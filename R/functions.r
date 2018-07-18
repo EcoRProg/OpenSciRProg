@@ -19,12 +19,13 @@ fixChlorophyllData <- function(chla){
     fechaTmp <- ymd( paste(chla$Year[i], chla$Month[i], 1 ) )
     
     if(is.na(fechaTmp)) {
-      if(chla$Month[i]=="Mar")
+      if(chla$Month[i]=="Mar"){
         fechaTmp <- ymd( paste(chla$Year[i], 3, 1 ) )
-      else if(chla$Month[i]=="Ago")
+      }else if(chla$Month[i]=="Ago"){
         fechaTmp <- ymd( paste(chla$Year[i], 8, 1 ) )
-      else
+      }else{
         fechaTmp <- dmy(chla$Month[i])
+      }
     } 
     
     chla$Date[i] <- fechaTmp
