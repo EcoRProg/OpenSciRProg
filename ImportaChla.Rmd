@@ -21,11 +21,19 @@ require(lubridate)
 fixedChla <- fixChlorophylData(chla)
 
 require(ggplot2)
+require(tidyr)
+
+ChlaRearrenged <- gather(fixedChla, IntegE1, IntegE2, key = "station", value = "ChlaInteg")
 
 ggplot(fixedChla, aes(Date, IntegE1)) + geom_point(color="hotpink2") + scale_y_log10() + theme_minimal()
 
 ggplot(fixedChla, aes(Date, IntegE2)) + geom_point(color="mediumpurple3") + scale_y_log10() + theme_minimal()
 
+
 range(fixedChla$IntegE1, na.rm = TRUE)
+
+
+
+
 
 ```
