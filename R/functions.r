@@ -11,8 +11,7 @@ fixChlorophyllData <- function(chla){
       
       chla$Year[i] <- actualYear
       
-    }
-    else {
+    } else {
       
       actualYear <- chla$Year[i]
     }
