@@ -1,4 +1,15 @@
 
+#' Reparacion del set de datos de clorofila
+#'
+#' @param chla data.frame
+#'
+#' @return data.frame arreglado
+#' @export
+#'
+#' @examples
+#' 
+#' fixChlorophyllData(badChlorophyllDataFrame)
+#' 
 fixChlorophyllData <- function(chla){
 
   
