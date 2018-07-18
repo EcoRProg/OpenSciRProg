@@ -12,5 +12,23 @@ knitr::opts_chunk$set(echo = TRUE)
 ## Importa Chla
 
 ```{r importaChla}
+chla <- read.delim("Data/Clorofila.txt",stringsAsFactors = FALSE)#usar read.delim
+#str(chla)
+#rownames(chla)
+#names(chla)
+#head(chla)
+#nrow(chla)
+#ncol(chla)
+#chla[1:10,3]
+#chla
+#install.packages("lubridate")#paquete lubridate
+
+require(lubridate)
+
+chla <- fixChlorophyllData(chla)
+
+require(ggplot2)
+
+ggplot(chla,aes(Date,IntegE1))+geom_point()
 
 ```
