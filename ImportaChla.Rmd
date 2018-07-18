@@ -20,7 +20,37 @@ require(lubridate)
 
 fixedChla <- fixChlorophyllData(chla)
 
+require(ggplot2)
+require(tidyr)
 
-str(fixedChla)
+range(fixedChla$IntegE1,na.rm = TRUE)
+
+ChlaRearranged <- gather(fixedChla,IntegE1,IntegE2, key="Station",value="ChlaInteg" )
+
+ggplot(ChlaRearranged, aes(Date, ChlaInteg, color=Station)) + theme_classic() + scale_y_log10() + geom_point()
+
+ggplot(ChlaRearranged, aes(Date, ChlaInteg, color=Station)) + theme_classic() + 
+      scale_y_log10() + geom_point() + geom_line()+ facet_wrap( ~Station) + 
+      scale_color_brewer(palette="Dark2") + stat_smooth(se=FALSE)
+
+require(dplyr)
+
+ChlaRearranged <- ChlaRearranged %>% mutate(Month=month(Date))
+
+chlaByMonth <- ChlaRearranged %>% filter(!is.na(Month)) %>% group_by(Year,Month) %>% summarise(ChlaInteg=mean(ChlaInteg, na.rm = TRUE))
+
+str(chlaByMonth)
+
+ggplot(chlaByMonth, aes(factor(Month), ChlaInteg, color=factor(Year))) + theme_classic() + 
+      scale_y_log10() + geom_point() 
+
+ggplot(chlaByMonth, aes(Year, ChlaInteg, color=factor(Month))) + theme_classic() + 
+      scale_y_log10() + geom_point() + geom_line() 
+
+
+ggplot(chlaByMonth, aes(Year, ChlaInteg, color=factor(Month))) + theme_classic() + 
+      geom_point() + geom_line() + facet_wrap(~Month) + stat_quantile(quantiles = 0.5)
+
+
 
 ```

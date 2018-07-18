@@ -1,40 +1,36 @@
-# A Review of Open Science and Computational Ecology  
-<<<<<<< HEAD
-## Willingness to Share Research Data Is Related to the Strength of the Evidence and the Quality of Reporting of Statistical Results
-**Jelte M. Wicherts , Marjan Bakker and Dylan Molenaar** *PlosOne, 2011*
-The widespread reluctance to share published research data is often hypothesized to be due to the authors' fear that reanalysis may expose errors in their work or may produce conclusions that contradict their own. However, these hypotheses have not previously been studied systematically.
+---
+title: "A review of Open Science and Computational Ecology"
+output:
+  pdf_document: default
+  html_document: default
+bibliography: Biblio.bib
+---
 
-=======
 
-#Big data and the future of ecology
+# Big data and the future of ecology
 
-##Massive volumes of data
+## Massive volumes of data
 
-  1.Ecologistslack a culture of data sharing
+  1.Ecologistslack a culture of data sharing [@Wilson2017; @Mislan2016; @Marina2018]
   
   2.Treat data as an enduring product of research
   
   3.Basicaly to address large-scale questions
   
-##Action items for individual ecologists
+## Action items for individual ecologists 
 
   1.Organize, document, and preserve data for posterity
   
-  2.Share data
+  2.Share data @Marina2018
   
   3.Collaborate with networks of colleagues to bring together heterogeneous datasets to address larger scale questions 4.Address data management issues with students and peers
   
   
-##Conclusions
+## Conclusions
 
   * Ecology can make critical contributions to large-scale environmental questions and close many knowledge gaps that are likely to persist in big-science initiatives, but only if ecologists are willing to participate in the big-data landscape
-<<<<<<< HEAD
 
-=======
-  
->>>>>>> 936a628fe9fb745db8a8113cadabba515ab58b43
-
-#Una mente abierta en datos abiertos
+# Una mente abierta en datos abiertos
 
 Como dice Carly Strasser :
 
@@ -95,6 +91,8 @@ Chen H, Gurmesa GA, Zhang W, Zhu X, Zheng M, Mao Q, Zhang T, Mo J (2016)
 La hipótesis de saturación de nitrógeno (N) sugiere que cuando un ecosistema alcanza la saturación de N, la entrada continua de N provocará una mayor lixiviación de N, emisión de óxido nitroso (N2O) y tasas de mineralización y nitrificación de N. También sugiere que un elemento diferente se convertirá en el principal factor limitante cuando se haya alcanzado la saturación de N. Aunque esta hipótesis ha sido probada en bosques templados, aún no se ha abordado si se pueden aplicar directamente a los bosques tropicales saturados de nitrógeno. Para probar esta hipótesis, el N inorgánico del suelo, la mineralización del N del suelo y la tasa de nitrificación, la tasa de emisión de N2O del suelo y la tasa de lixiviación del nitrato (imagen en línea) se midieron en un bosque tropical saturado de N en el sur de China...
 
 Equivalente a mandar todo a la licuadora. No?
+
+## Bibliography
 
 
 
