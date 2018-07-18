@@ -28,7 +28,7 @@ val_01 <- 1
 
 #chla
 
-chla <- fixCholorophyllData(chla)
+chla <- fixChlorophyllData(chla)
   
 chla
 
