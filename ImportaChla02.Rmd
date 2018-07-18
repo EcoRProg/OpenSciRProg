@@ -1,0 +1,40 @@
+---
+title: "Importar Datos Chla"
+author: "L.A.S."
+date: "July 17, 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Importa Chla
+
+```{r importaChla}
+source('R/functions.r')
+chla <- read.delim('Data/Clorofila.txt', stringsAsFactors = FALSE)
+
+#  str(chla)
+#  chla
+#  rownames(chla)
+#  colnames(chla)
+#  ncol(chla)
+#  nrow(chla)
+#  acu <- chla[1:3,]
+
+require(lubridate)
+val_01 <- 1
+
+#chla
+
+chla <- fixChlorophyllData(chla)
+  
+chla
+
+  
+
+  
+  
+  
+```
