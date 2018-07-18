@@ -12,19 +12,31 @@ knitr::opts_chunk$set(echo = TRUE)
 ## Importa Chla
 
 ```{r importaChla}
-source ("R/functions.R")  
-chla<-read.delim("Data/Clorofila.txt", stringsAsFactors = FALSE)
-chla
-str(chla)# da la estructura de los datos
-colnames(chla)
-names (chla)
-head (chla)
-nrow(chla)
-chla[1:10,3]
+source("R/functions.r")
+
+chla <- read.delim("Data/Clorofila.txt", stringsAsFactors = FALSE)
+
 require(lubridate)
-chla<-fixChlorophyllData(chla)#y que genera una columna nueva!
-str(chla)
-chla
-require(ggplot2) #para que me active el package que ya baje
+
+fixedChla <- fixChlorophyllData(chla)# esto renombro los datos modificados, es un objeto nuevo de datos
+str(fixedChla)
+require(ggplot2)
+ggplot(fixedChla, aes (Date, IntegE1)) + geom_point (color="red")+ theme_grey () #pongo datos, ejes, se pone ggplot solo porque es la funcion, sin el 2. Theme me pone el color de fondo del grafico. y cada + le va aregagando capasx al grafico
+ggplot(fixedChla, aes (Date, IntegE2)) + geom_point (color="blue")
+ChlaRearranged<-gather (fixedChla,IntegE1,IntegE2, key="station",value="ChlaInteg") #esto pone todo en una columna porque en dos diferentes no le gusta al R
+ggplot(ChlaRearranged, aes (Date, ChlaInteg, color=station)) + geom_point() +theme_classic()+scale_y_log10()#color=station quiere decir que le ponga dos colores diferentes a cada sitio de muestreo. Todo esto lo hice para que me haga dos sitios de muestreo en un mismo grafico. Y tuve que antes rearreglar la tabla de datos para que lea el R.
+ggplot(ChlaRearranged, aes (Date, ChlaInteg, color=station)) + geom_point() +theme_classic()+scale_y_log10()+facet_wrap ( ~station)# facet_wrap ( ~Station) es para que me haga dos grafico juntos pegados
+library(tidyr)
+install.packages("dplyr")
+require(dplyr)
+ChlaRearranged<- ChlaRearranged%>%mutate(Month=month(Date))#reemplazar mes por el mes que esta en la columna Date (que es el numero del mes). Es decir aca solamente arreglamos el mes.
+str(ChlaRearranged)
+ChlaRearranged%>%group_by(Month) %>% summarise(ChlaInteg=mean(ChlaInteg,na.rm=TRUE))#queremos calcular el promedio de todos los meses/ na.rm=TRUE es remove los NA
+
+chlaByMonth<-ChlaRearranged%>%filter(!is.na(Month))%>%group_by(Year,Month)%>%summarise(ChlaInteg=mean(ChlaInteg,na.rm=TRUE))#agrupar por anio, y agrupar por mes y para eso calculo la media, %>%g significa una encadenamiento de comandos. POnerlo bien pero filter es para filtrar los NA y no salgan en el grafico
+
+str(chlaByMonth)
+
+ggplot(chlaByMonth, aes(factor(Month),ChlaInteg,color=Year))+ geom_point() +theme_classic()+scale_y_log10()#aca quiero ver todos los anios para determinado mes.
 
 ```
