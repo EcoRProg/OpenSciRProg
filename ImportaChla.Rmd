@@ -18,9 +18,9 @@ chla <- read.delim("Data/Clorofila.txt", stringsAsFactors = FALSE)
 
 require(lubridate)
 
-fixedChla <- fixChlorophyllData(chla)
+chla <- fixChlorophylData(chla)
 
+require(ggplot2)
 
-str(fixedChla)
 
 ```
