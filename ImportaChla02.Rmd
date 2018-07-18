@@ -13,6 +13,9 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ```{r importaChla}
 source('R/functions.r')
+require(lubridate)
+require(ggplot2)
+
 chla <- read.delim('Data/Clorofila.txt', stringsAsFactors = FALSE)
 
 #  str(chla)
@@ -23,7 +26,6 @@ chla <- read.delim('Data/Clorofila.txt', stringsAsFactors = FALSE)
 #  nrow(chla)
 #  acu <- chla[1:3,]
 
-require(lubridate)
 val_01 <- 1
 
 #chla
