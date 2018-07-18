@@ -28,7 +28,7 @@ ggplot(fixedChla, aes(Date, IntegE1)) + geom_point(color="hotpink1") + scale_y_l
 
 ggplot(fixedChla, aes(Date, IntegE2)) + geom_point(color="mediumpurple3") + scale_y_log10() + theme_minimal()
 
-range(fixedChla$IntegE1, na.rm = TRUE)
+range(fixedChla$IntegE1, na.rm = TRUE) #na.rm remueve los valores NA de la variable 
 
 
 require(tidyr)
@@ -42,9 +42,12 @@ require(dplyr)
 
 ChlaRearrenged <- ChlaRearrenged %>% mutate(Month=month(Date)) #Modifica los valores de la variable Month haciendo que copie los meses de Date
 
-ChlaByMonth <- ChlaRearrenged %>% group_by(Year, Month) %>% summarise(ChlaInteg=mean(ChlaInteg, na.rm = TRUE))
+ChlaByMonth <- ChlaRearrenged %>% filter(!is.na(Month)) %>% group_by(Year, Month) %>% summarise(ChlaInteg=mean(ChlaInteg, na.rm = TRUE)) #Del data frame ChlaRearrenged, agrupa por año y mes y calcula la media de la variable ChlaInteg para cada mes de cada año
 
-ggplot(ChlaByMonth, aes(factor(Month), ChlaInteg, color=Year)) + theme_minimal() + scale_y_log10() + geom_point()
+ggplot(ChlaByMonth, aes(factor(Month), ChlaInteg, color=factor(Year))) + theme_minimal() + scale_y_log10() + geom_point() + geom_line()
 
+ggplot(ChlaByMonth, aes(Year, ChlaInteg, color=factor(Month))) + theme_minimal() + scale_y_log10() + geom_point() + geom_line()
+
+ggplot(ChlaByMonth, aes(Year, ChlaInteg, color=factor(Month))) + theme_minimal() + scale_y_log10() + geom_point() + geom_line() + facet_wrap(~Month)
 
 ```
