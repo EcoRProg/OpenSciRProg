@@ -25,7 +25,8 @@ chla <- read.delim("Data/Clorofila.txt",stringsAsFactors = FALSE)#usar read.deli
 
 require(lubridate)
 
-chla <- fixChlorophyllData(chla)
+source("R/function1.r")
+chla <- fixChlorophyllData(chla);
 
 require(ggplot2)
 
@@ -37,12 +38,29 @@ auxchla <- gather(chla,IntegE1,IntegE2,key="Station",value="ChlaInteg")
 
 ggplot(auxchla,aes(Date,ChlaInteg,color=Station))+geom_point()+theme_classic()+scale_y_log10()
 
-ggplot(auxchla,aes(Date,ChlaInteg,color=Station))+geom_point()+theme_classic()+scale_y_log10()+geom_line()+facet_wrap( ~Station)+scale_color_brewer(palette="Dark2")+stat_smooth()
+ggplot(auxchla,aes(Date,ChlaInteg,color=Station))+geom_point()+theme_classic()+scale_y_log10()+geom_line()+facet_wrap( ~Station)+scale_color_brewer(palette="Dark2")+stat_smooth(se=FALSE)
+
+
+require(dplyr)
+auxchla <- auxchla %>% mutate(Month=month(Date))
+
+chlaByMonth <- auxchla %>% group_by(Year,Month) %>% summarise(ChlaInteg=mean(ChlaInteg, na.rm = TRUE))
+
+str(chlaByMonth)
+
+ggplot(chlaByMonth,aes(factor(Month),ChlaInteg,color=factor(Year)))+geom_point()+theme_classic()+scale_y_log10()+geom_line()+facet_wrap(~Month)
+
+
+ggplot(chlaByMonth,aes(Year,ChlaInteg,color=factor(Month)))+geom_point()+theme_classic()+scale_y_log10()+geom_line()+facet_wrap(~Month)
+
+ggplot(chlaByMonth,aes(Year,ChlaInteg,color=factor(Month)))+geom_point()+theme_classic()+scale_y_log10()+geom_line()
+
+
+#+geom_line()+scale_color_brewer(palette="Dark2")+stat_smooth(se=FALSE)
+
 
 
 #ggplot(chla,aes(Date,IntegE1))+geom_point(color="blue")
-
-
 #install.packages("tidyr")
 #require(tidyr)
 
