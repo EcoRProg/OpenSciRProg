@@ -30,13 +30,20 @@ fixChlorophyllData <- function(chla)
                       {
                       chla$Date[i]=ymd(paste(chla$Year[i],8,1))
                       }
-                      else if (is.na(aux[[1]][3])==FALSE) 
+                      else if (is.na(dmy(aux[[1]][3]))==FALSE) 
                             {
                             chla$Date[i] <- dmy(aux[[1]][3])
                             }
-                            else NA      
-    
-    }  
+                            else { aux1 <- aux[[1]][1]
+                                   aux2 <- substr(aux1,1,3)
+                                   aux3<- mdy(paste(aux2,aux[[1]][2],aux[[1]][3]))
+                                   if (is.na(aux3)==FALSE)
+                                      {
+                                      chla$Date[i] <- aux3
+                                      }
+                                      else NA
+                                 }
+}  
     
 #Sys.getlocale(category = "LC_ALL",locale="C")      
 #chla$Date <- ymd(paste(chla$Year,chla$Month,1))
